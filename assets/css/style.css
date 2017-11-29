@@ -1,0 +1,9 @@
+body {
+    background: rgb(165, 204, 226);
+}
+
+box {
+    background: orange;
+    color: white;
+    font-size: 50px;
+}
