@@ -2,9 +2,7 @@ body {
     background-image: url("../images/background.jpg");
     /* display: block;
     margin: auto; */
-    position: fixed;
 }
-
 
 box {
     background: white;
