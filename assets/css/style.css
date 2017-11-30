@@ -5,8 +5,13 @@ body {
     position: fixed;
 }
 
+.container {
+    /* width: 100%; */
+	/* margin: 0 auto; 
+	text-align: center; */
+}
 
-box {
+.box {
     background: white;
     border-style: solid;
     border-width: 5px;
@@ -24,13 +29,14 @@ box {
     border-color: grey;
 }
 
-.computerRandomNumber {
+#goal {
     margin-top: 20px;
     background: white;
     border-style: solid;
     border-width: 5px;
     border-color: grey;
 }
+
 
 #pinkCrystal {
     width: 200px;
@@ -77,6 +83,7 @@ box {
     border-style: solid;
     border-width: 5px;
     border-color: grey;
+    height: 18px;
 }
 
 #gameStats {

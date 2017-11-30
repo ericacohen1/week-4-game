@@ -18,6 +18,8 @@ var greenJewel = Math.floor(Math.random() * 12) + 1;
 // var for players current score
 var score = 0;
 
+
+
 var updateScore = function(){
     $(".cummulativeScore").empty();
     $(".cummulativeScore").append(score);
@@ -27,12 +29,14 @@ var updateScore = function(){
     $("#myLosses").append(losses);
 }
 
+newGame();
+
 // new game
 function newGame() {
     score = 0;
+    computerRandomNumber = Math.floor(Math.random() * 100) + 19;
     $(".computerRandomNumber").empty();
     $(".computerRandomNumber").append(computerRandomNumber);
-    computerRandomNumber = Math.floor(Math.random() * 100) + 19;
     pinkJewel = Math.floor(Math.random() * 12) + 1;
     blueJewel = Math.floor(Math.random() * 12) + 1;
     yellowJewel = Math.floor(Math.random() * 12) + 1;
@@ -55,6 +59,7 @@ var game = function (){
     else if(score > computerRandomNumber) {
         // losses ++;
         losses++;
+        alert("Try Again");
         // new game begins
         newGame();
     }   
@@ -82,3 +87,4 @@ var game = function (){
     })
 
 });
+
